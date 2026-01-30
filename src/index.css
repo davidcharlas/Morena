@@ -21,6 +21,14 @@ h4 {
   line-height: 1.2 !important;
 }
 
+h3:hover {
+  color: var(--secondaryColor);
+}
+
+h4:hover {
+  color: var(--secondaryColor);
+}
+
 html {
   line-height: 1.5;
 }
@@ -137,8 +145,7 @@ li {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 21px 12px;
 }
 
 .nav-a {
@@ -180,7 +187,7 @@ ul.dropdown {
   padding: 12px 0px;
   background-color: white;
   position: absolute;
-  top: 40px;
+  top: 68px;
   /* left: 270px; */
   border-radius: 4px;
   box-shadow: var(--box-shadow);
@@ -224,7 +231,7 @@ a.dropdown-item-a {
 
 ul.menu-dropdown {
   position: absolute;
-  top: 45px;
+  top: 68px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 22px;
@@ -233,11 +240,11 @@ ul.menu-dropdown {
   min-height: 224px;
   background-color: white;
   padding: 20px;
+  border-radius: 4px;
   box-shadow: var(--box-shadow);
   opacity: 0;
   transform: translateY(12px);
   transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
-  ;
   z-index: 100;
   visibility: hidden;
   pointer-events: none;
@@ -374,6 +381,22 @@ ul.menu-dropdown {
   background-color: #000;
 }
 
+.hover-border-bottom {
+  display: inline;
+  background-image: linear-gradient(to right,
+      var(--secondaryColor),
+      var(--secondaryColor));
+  background-size: 0 2px;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  transition: background-size 0.3s ease;
+}
+
+.hover-border-bottom:hover {
+  background-size: 100% 2px;
+}
+
+
 .header {
   width: 100%;
   padding-top: 30px;
@@ -438,7 +461,7 @@ ul.menu-dropdown {
   animation: slideShow 20s infinite;
 }
 
-/* Each item appears at different times */
+
 .news-item:nth-child(1) {
   animation-delay: 0s;
 }
@@ -671,6 +694,10 @@ ul.menu-dropdown {
   font-weight: bold;
 }
 
+.card-details h3:hover {
+  color: var(--secondaryColor);
+}
+
 .editor-right-blog {
   display: flex;
   justify-content: space-between;
@@ -678,13 +705,13 @@ ul.menu-dropdown {
 
 .article-post {
   /* background-color: red; */
-  width: 290px;
+  /* width: 290px; */
   height: 331px;
 }
 
 .article-post img {
-  width: 290px;
-  height: 203px;
+  width: 254.44px;
+  height: 178px;
   border-radius: 4px;
 }
 
@@ -696,8 +723,10 @@ ul.menu-dropdown {
 
 section.lifestyle {
   margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 30px;
+  /* justify-content: space-between; */
 }
 
 .life-style-container {
@@ -742,7 +771,7 @@ section.lifestyle {
 
 .horizontal-post {
   height: 100px;
-  width: 338px;
+  width: 396px;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -843,12 +872,14 @@ section.lifestyle {
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .vertical-links {
   /* background-color: red; */
   width: 380px;
   height: 250px;
+  padding-left: 16px;
 }
 
 .daily-news-wrapper {
@@ -871,7 +902,7 @@ section.lifestyle {
 .travel-news-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 30px;
 }
 
 .category-tag {
@@ -886,7 +917,7 @@ section.lifestyle {
 
 .category-name {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 800;
   color: #111827;
 }
 
@@ -897,7 +928,7 @@ section.lifestyle {
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 4px;
-  min-width: 20px;
+  width: 14px;
   text-align: center;
 }
 
@@ -1040,4 +1071,38 @@ hr {
 .section {
   width: 100%;
   height: 100vh;
+}
+
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.image-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.9) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-overlay>* {
+  position: relative;
+  z-index: 2;
 }

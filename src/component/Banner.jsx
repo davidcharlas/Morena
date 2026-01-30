@@ -4,10 +4,10 @@ export default function Banner() {
         <div className="banner">
             <div className="banner-post">
                 <div className="banner-meta">
-                    <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 05, 2024</div>
+                    <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 11, 2024</div>
                 </div>
                 <div className="banner-title">
-                    <h3><a href="#">New Study Reveals Surprising Benefits of <br /> Meditation on Brain Health</a></h3>
+                    <h3><a className="hover-border-bottom" href="#">New Study Reveals Surprising Benefits of <br /> Meditation on Brain Health</a></h3>
                 </div>
                 <div className="banner-discription">
                     <p>

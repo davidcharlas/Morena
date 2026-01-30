@@ -38,7 +38,7 @@ export default function EditorCard() {
                             <div className="menu-card-meta">
                                 <span style={{ backgroundColor: "white" }}>cars</span> {card.posted}
                             </div>
-                            <h3>{card.title}</h3>
+                            <h3 className="hover-border-bottom">{card.title}</h3>
                         </div>
                     </article>
                 ))}

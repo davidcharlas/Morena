@@ -31,6 +31,9 @@
   padding-top: 15px;
   letter-spacing: -0.9px !important;
 }
+.leftside h3:hover{
+  color: var(--secondaryColor);
+}
 .leftside p{
   width: 80%;
   padding-top: 13px;

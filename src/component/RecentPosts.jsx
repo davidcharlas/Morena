@@ -55,7 +55,7 @@ export default function RecentPosts() {
                             <span>{item.category}</span>
                             {item.posted}
                         </div>
-                        <h4>{item.title}</h4>
+                        <h4 className="hover-border-bottom">{item.title}</h4>
                     </div>
                 ))}
             </div>

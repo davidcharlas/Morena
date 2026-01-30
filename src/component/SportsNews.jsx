@@ -26,8 +26,8 @@ export default function SportsNews() {
                     <img src="/imgs/sports-1.jpg" alt="Swimming" />
                 </div>
                 <div className="horizontal-post-content" style={{padding:"20px"}}>
-                    <div className="menu-card-meta"><span style={{ backgroundColor: "white" }}>sport</span> August 05, 2024</div>
-                    <h3 className="horizontal-post-title" style={{lineHeight: "1.2", letterSpacing:"-0.9px"}}>
+                    <div className="menu-card-meta"><span style={{ backgroundColor: "white" }}>sport</span> August 11, 2024</div>
+                    <h3 className="horizontal-post-title hover-border-bottom" style={{lineHeight: "1.2", letterSpacing:"-0.9px"}}>
                         Great time at the river! What a perfect way to cool off on a hot summer day.
                     </h3>
                     <p className="horizontal-post-description">

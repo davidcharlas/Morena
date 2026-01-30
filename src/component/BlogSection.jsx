@@ -16,8 +16,8 @@ export default function BlogSection() {
             <div className="editor-left-blog">
                 <article>
                     <div className="leftside">
-                        <div className="menu-card-meta"><span>spain</span> August 05, 2024</div>
-                        <h3>Most Beautiful Things You Can But on Black Friday</h3>
+                        <div className="menu-card-meta"><span>spain</span> August 11, 2024</div>
+                        <h3 className="hover-border-bottom">Most Beautiful Things You Can But on Black Friday</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendu…</p>
                     </div>
                     <div className="rightside">

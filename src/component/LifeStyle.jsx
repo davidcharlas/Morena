@@ -37,11 +37,11 @@ export default function LifeStyle() {
         <section className="lifestyle">
             <div>
                 <div style={{ marginLeft: "50px" }}><SectionTitle title={"Lifestyle _"} /></div>
-                <div style={{paddingLeft:"50px"}}>
-                    <div className="life-style-container">
+                <div style={{ paddingLeft: "50px" }}>
+                    <div className="life-style-container ">
                         <img src="/imgs/life-style-1.jpg" alt="" />
                         <div className="life-style-1-content">
-                            <div style={{ color: "white" }} className="menu-card-meta"><span>Lifestyle</span> August 05, 2024</div>
+                            <div style={{ color: "white" }} className="menu-card-meta"><span>Lifestyle</span> August 11, 2024</div>
                             <h3>Study Finds Link Between Social Media Use and Decling Mental Health in Teens</h3>
                         </div>
                         <div className="horizonta-posts">

@@ -28,7 +28,7 @@ export default function Training() {
                 <div className="life-style-container" style={{ height: "276px"}}>
                     <img style={{ width: "380px", height: "266px" }} src="/imgs/training-1.jpg" alt="" />
                     <div className="life-style-1-content" style={{ top: "140px", width: "290px", height: "110px" }}>
-                        <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 05, 2024</div>
+                        <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 11, 2024</div>
                         <h3 style={{ width: "90%" }}>Everything You Wanted to Know About mega city's</h3>
                     </div>
                 </div>

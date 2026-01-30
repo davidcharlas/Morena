@@ -10,7 +10,7 @@ export default function BusinessNews() {
         <div className="life-style-container" style={{ margin: "0", height: "auto" }}>
           <img src="/imgs/business-1.jpg" alt="" style={{ width: "396px", height: "278px" }} />
           <div className="life-style-1-content" style={{ width: "390px", top: "150px" }}>
-            <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 05, 2024</div>
+            <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 11, 2024</div>
             <h3 style={{ width: "90%" }}>Everything You Wanted to Know About mega city's</h3>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function BusinessNews() {
           <div className="life-style-container" style={{ margin: "0", height: "auto" }}>
             <img src="/imgs/pet-1.jpg" alt="" style={{ width: "396px", height: "278px" }} />
             <div className="life-style-1-content" style={{ width: "390px", top: "150px" }}>
-              <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 05, 2024</div>
+              <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 11, 2024</div>
               <h3 style={{ width: "90%" }}>Everything You Wanted to Know About mega city's</h3>
             </div>
           </div>
