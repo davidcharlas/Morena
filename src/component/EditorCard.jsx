@@ -20,7 +20,7 @@ export default function EditorCard() {
 
     return (
         <section className="editor">
-            <div className="editor-title"><SectionTitle title={"Editor Pick's _"}/></div>
+            <div className="editor-title"><SectionTitle title={"Editor Pick's"}/></div>
             <div className="editor-card">
                 {cardArray.map((card, index) => (
                     <article

@@ -9,7 +9,7 @@ export default function TopCategory() {
     ]
     return (
         <div className='top-category'>
-            <div style={{ margin: "20px 0px" }}><SectionTitle title={"Top Categories _"} /></div>
+            <div style={{ margin: "20px 0px" }}><SectionTitle title={"Top Categories"} /></div>
             <div className="top-category-container">
                 {categories.map((item, index) => (
                     <div key={index} className="category-tag">

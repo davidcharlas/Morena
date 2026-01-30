@@ -22,7 +22,7 @@ export default function DailyNews() {
     ]
     return (
         <div className='daily-news-wrapper'>
-            <SectionTitle title={"Daily News _"} />
+            <SectionTitle title={"Daily News"} />
             <div className="daily-news-container">
                 {newsArr.map((item, index) => (
                     <PostHorizontal

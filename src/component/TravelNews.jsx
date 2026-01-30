@@ -1,7 +1,6 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
 import Article from './Article'
-
 export default function TravelNews() {
     const articlesArr = [
         {
@@ -21,7 +20,7 @@ export default function TravelNews() {
     return (
         <div>
             <div className="travel-title">
-                <SectionTitle title={"Travel News _"} />
+                <SectionTitle title={"Travel News"} />
             </div>
             <div className="travel-news-container">
                 {articlesArr.map((item, index) => (

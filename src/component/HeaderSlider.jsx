@@ -10,11 +10,11 @@ export default function HeaderSlider() {
 
       <div class="slider-content">
         <div class="text-wrapper">
-          <div class="news-item">Why is Child Development So Important in the Early Years</div>
-          <div class="news-item">Sed odio eros, dictum non augue et, tincidunt.</div>
-          <div class="news-item">Business Discussion Tips To Have Receptive Communications</div>
-          <div class="news-item">Breaking: New Technology Revolutionizes Industry Standards</div>
-          <div class="news-item">Global Markets React to Economic Policy Changes</div>
+          <div class="news-item"><span className='hover-border-bottom'>Why is Child Development So Important in the Early Years</span></div>
+          <div class="news-item"><span className='hover-border-bottom'>Sed odio eros, dictum non augue et, tincidunt.</span></div>
+          <div class="news-item"><span className='hover-border-bottom'>Business Discussion Tips To Have Receptive Communications</span></div>
+          <div class="news-item"><span className='hover-border-bottom'>Breaking: New Technology Revolutionizes Industry Standards</span></div>
+          <div class="news-item"><span className='hover-border-bottom'>Global Markets React to Economic Policy Changes</span></div>
         </div>
       </div>
 

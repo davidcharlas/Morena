@@ -20,7 +20,7 @@ export default function SportsNews() {
     ]
     return (
         <div>
-            <div style={{ margin: "20px 0px" }}><SectionTitle title={"Sports News _"} /></div>
+            <div style={{ margin: "20px 0px" }}><SectionTitle title={"Sports News"} /></div>
             <div className="horizontal-post-card">
                 <div className="horizontal-post-image">
                     <img src="/imgs/sports-1.jpg" alt="Swimming" />

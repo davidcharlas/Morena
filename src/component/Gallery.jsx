@@ -36,7 +36,7 @@ export default function Gallery() {
     return (
         <section className="gallery">
             <div className="gallery-content">
-                <div style={{ marginBottom: "14px", color: "white"}}><SectionTitle title={"Gallery _"} /></div>
+                <div style={{ marginBottom: "14px", color: "white"}}><SectionTitle title={"Gallery"} /></div>
                 <div className="gallery-items">
                     <div className="gallery-thumbnail">
                         <img src="/imgs/gallery-1.jpg" alt="Gallery Image 1" />

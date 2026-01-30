@@ -1,11 +1,12 @@
 import React from 'react'
 
-export default function SectionTitle({title}) {
+export default function SectionTitle({ title }) {
     return (
-        <div>
+        <div style={{ display: "flex", alignItems: "end" }}>
             <h2 className="editor-heading">
                 <span>{title}</span>
             </h2>
+            {/* <div class="section-title__accent"></div> */}
         </div>
     )
 }

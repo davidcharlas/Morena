@@ -23,7 +23,7 @@ export default function Training() {
     ]
     return (
         <div className='training-container'>
-            <SectionTitle title={"Training _"} />
+            <SectionTitle title={"Training"} />
             <div className="training-card">
                 <div className="life-style-container" style={{ height: "276px"}}>
                     <img style={{ width: "380px", height: "266px" }} src="/imgs/training-1.jpg" alt="" />

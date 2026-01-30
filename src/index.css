@@ -29,6 +29,10 @@ h4:hover {
   color: var(--secondaryColor);
 }
 
+img {
+  cursor: pointer;
+}
+
 html {
   line-height: 1.5;
 }
@@ -225,7 +229,7 @@ li.dropdown-item:hover a {
 a.dropdown-item-a {
   padding: 5.6px 20px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   color: #000;
 }
 
@@ -343,6 +347,7 @@ ul.menu-dropdown {
   padding: 15px 20px;
   box-sizing: border-box;
   box-shadow: var(--box-shadow);
+  z-index: 4;
 }
 
 .search-bar>input {
@@ -389,7 +394,7 @@ ul.menu-dropdown {
   background-size: 0 2px;
   background-repeat: repeat-x;
   background-position: 0 100%;
-  transition: background-size 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hover-border-bottom:hover {
@@ -459,6 +464,10 @@ ul.menu-dropdown {
   white-space: nowrap;
   opacity: 0;
   animation: slideShow 20s infinite;
+}
+
+.news-item:hover span {
+  color: var(--secondaryColor);
 }
 
 
@@ -561,6 +570,17 @@ ul.menu-dropdown {
     width: 28px;
     height: 28px;
   }
+}
+
+.editor-heading span::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 4px;
+  margin-left: 6px;
+  /* padding-left: 8px; */
+  background : var(--secondaryColor);
+  transform: skewX(-30deg);
 }
 
 .banner {
@@ -729,11 +749,9 @@ section.lifestyle {
   /* justify-content: space-between; */
 }
 
-.life-style-container {
-  /* background-color: red; */
+/* .life-style-container {
   width: 60%;
   height: 420px;
-  /* margin-left: 50px; */
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -747,12 +765,45 @@ section.lifestyle {
   border-radius: 4px;
   box-sizing: border-box;
   flex-shrink: 0;
+} */
+.life-style-container {
+  width: 60%;
+  height: 420px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.life-style-container img {
+  width: 397px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Add overlay to the image */
+.life-style-container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 397px;
+  height: 50%;
+  background: linear-gradient(to top, #000 0, #03071e 30%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 4px;
 }
 
 .life-style-1-content {
   position: absolute;
   bottom: 26px;
   left: 22px;
+  z-index: 2;
 }
 
 .life-style-1-content h3 {

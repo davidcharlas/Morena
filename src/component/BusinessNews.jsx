@@ -6,7 +6,7 @@ export default function BusinessNews() {
   return (
     <div className='business-news-container'>
       <div className="business-news">
-        <div style={{ marginBottom: "20px" }}><SectionTitle title={"Business News _"} /></div>
+        <div style={{ marginBottom: "20px" }}><SectionTitle title={"Business News"} /></div>
         <div className="life-style-container" style={{ margin: "0", height: "auto" }}>
           <img src="/imgs/business-1.jpg" alt="" style={{ width: "396px", height: "278px" }} />
           <div className="life-style-1-content" style={{ width: "390px", top: "150px" }}>
@@ -25,7 +25,7 @@ export default function BusinessNews() {
       </div>
       <div className="pet-friends">
         <div className="business-news">
-          <div style={{ marginBottom: "20px" }}><SectionTitle title={"Pet Friends _"} /></div>
+          <div style={{ marginBottom: "20px" }}><SectionTitle title={"Pet Friends"} /></div>
           <div className="life-style-container" style={{ margin: "0", height: "auto" }}>
             <img src="/imgs/pet-1.jpg" alt="" style={{ width: "396px", height: "278px" }} />
             <div className="life-style-1-content" style={{ width: "390px", top: "150px" }}>

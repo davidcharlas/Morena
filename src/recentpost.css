@@ -44,3 +44,17 @@
 .recent-post-card h4:hover {
   color: var(--secondaryColor);
 }
+.hover-border-bottom {
+  display: inline;
+  background-image: linear-gradient(to right,
+      var(--secondaryColor),
+      var(--secondaryColor));
+  background-size: 0 2px;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  transition: background-size 0.3s ease;
+}
+
+.hover-border-bottom:hover {
+  background-size: 100% 2px;
+}

@@ -31,7 +31,7 @@ export default function FollowUs() {
     ]
     return (
         <div className='follow-us-div'>
-            <SectionTitle title={"Follow Us _"} />
+            <SectionTitle title={"Follow Us"} />
             <div className="follow-us-cards">
                 {socialMedia.map((item, index) => (
                     <div key={index} className="follow-us-card">
