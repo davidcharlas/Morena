@@ -1,0 +1,61 @@
+.editor-section{
+  margin-top: 60px;
+  background-color: var(--color-1);
+  width: 100%;
+  height: 496px;
+  border-radius: 50px;
+  padding: 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  position: relative;
+}
+.editor-left-blog{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  border-radius: 4px;
+}
+.leftside{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 74px 26px;
+  line-height: 1.2 !important;
+}
+.leftside h3{
+  width: 80%;
+  padding-top: 15px;
+  letter-spacing: -0.9px !important;
+}
+.leftside p{
+  width: 80%;
+  padding-top: 13px;
+  color: #888888;
+  line-height: 1.3;
+}
+.editor-right-blog{
+  width: 50%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  position: relative;
+}
+.editor-left-blog .leftside{
+  width: 50%;
+  height: 100%;
+}
+.rightside{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rightside img{
+  width: 305px;
+  height: 331px;
+  object-fit: cover;
+  border-radius: 0 4px 4px 0;
+}
