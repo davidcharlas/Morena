@@ -6,7 +6,6 @@ export default function SectionTitle({ title }) {
             <h2 className="editor-heading">
                 <span>{title}</span>
             </h2>
-            {/* <div class="section-title__accent"></div> */}
         </div>
     )
 }

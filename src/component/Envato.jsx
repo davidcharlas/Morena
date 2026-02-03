@@ -1,14 +1,14 @@
 
 export default function Envato() {
   return (
-    <div class="preview__header">
-      <div class="preview__envato-logo">
-        <a class="header-envato_market" href="#">Envato Market</a>
+    <div className="preview__header">
+      <div className="preview__envato-logo">
+        <a className="header-envato_market" href="#">Envato Market</a>
       </div>
 
-      <div id="js-preview__actions" class="preview__actions">
-        <div class="preview__action--buy">
-          <a class="header-buy-now e-btn--3d" href="#">Buy now</a>
+      <div id="js-preview__actions" className="preview__actions">
+        <div className="preview__action--buy">
+          <a className="header-buy-now e-btn--3d" href="#">Buy now</a>
         </div>
       </div>
     </div>

@@ -1,5 +1,23 @@
 
 export default function Banner() {
+    const banners = [
+        {
+            img: "/imgs/banner-1.jpg",
+            title: "Back to school - Captions and ideas for schools and universities",
+        },
+        {
+            img: "/imgs/banner-2.jpg",
+            title: "People Break Down Covid 19 Home Quarantine Rule.",
+        },
+        {
+            img: "/imgs/banner-3.jpg",
+            title: "Duis tempor purus rutrum, tincidunt lacus.",
+        },
+        {
+            img: "/imgs/banner-4.jpg",
+            title: "Winter Fashion Trends: They only looks you need",
+        },
+    ];
     return (
         <div className="banner">
             <div className="banner-post">
@@ -15,22 +33,12 @@ export default function Banner() {
                 </div>
             </div>
             <div className="banner-card">
-                <div className="card-item">
-                    <img src="/imgs/banner-1.jpg" alt="banner-img" />
-                    <h3>Back to school - Captions and ideas for schools and universities</h3>
-                </div>
-                <div className="card-item">
-                    <img src="/imgs/banner-2.jpg" alt="banner-img" />
-                    <h3>People Break Down Covid 19 Home Quarantine Rule.</h3>
-                </div>
-                <div className="card-item">
-                    <img src="/imgs/banner-3.jpg" alt="banner-img" />
-                    <h3>Duis tempor purus rutrum, tincidunt lacus.</h3>
-                </div>
-                <div className="card-item">
-                    <img src="/imgs/banner-4.jpg" alt="banner-img" />
-                    <h3>Winter Fashion Trends: They only looks you need</h3>
-                </div>
+                {banners.map((banner, index) => (
+                    <div key={index} className="card-item">
+                        <img src={banner.img} alt="banner-img" />
+                        <h3>{banner.title}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     )
