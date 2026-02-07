@@ -21,13 +21,13 @@ export default function SportsNews() {
     return (
         <div>
             <div style={{ margin: "20px 0px" }}><SectionTitle title={"Sports News"} /></div>
-            <div className="horizontal-post-card">
+            <div className="horizontal-post-card d-flex flex-column flex-lg-row">
                 <div className="horizontal-post-image">
                     <img src="/imgs/sports-1.jpg" alt="Swimming" />
                 </div>
-                <div className="horizontal-post-content" style={{padding:"20px"}}>
+                <div className="horizontal-post-content" style={{ padding: "20px" }}>
                     <div className="menu-card-meta"><span style={{ backgroundColor: "white" }}>sport</span> August 11, 2024</div>
-                    <h3 className="horizontal-post-title hover-border-bottom" style={{lineHeight: "1.2", letterSpacing:"-0.9px"}}>
+                    <h3 className="horizontal-post-title hover-border-bottom" style={{ lineHeight: "1.2", letterSpacing: "-0.9px" }}>
                         Great time at the river! What a perfect way to cool off on a hot summer day.
                     </h3>
                     <p className="horizontal-post-description">

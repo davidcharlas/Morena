@@ -34,10 +34,10 @@ export default function Gallery() {
 
     ]
     return (
-        <section className="gallery">
-            <div className="gallery-content">
+        <section className="gallery container-fluid">
+            <div className="gallery-content container">
                 <div style={{ marginBottom: "14px", color: "white"}}><SectionTitle title={"Gallery"} /></div>
-                <div className="gallery-items">
+                <div className="gallery-items d-flex flex-column flex-xl-row">
                     <div className="gallery-thumbnail">
                         <img src="/imgs/gallery-1.jpg" alt="Gallery Image 1" />
                         <div className="gallery-overlay">

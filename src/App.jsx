@@ -11,23 +11,27 @@ import DontMiss from './component/DontMiss'
 import Footer from './component/Footer'
 import Divider from './component/Divider'
 import ScrollToTop from './component/ScrollToTop'
+import BlogSection from './component/BlogSection'
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import './index.css'
 
 function App() {
-  return(
+  return (
     <>
-    {/* <Envato/> */}
-    <NavBar/>
-    <HeaderSlider/>
-    <Banner/>
-    <EditorCard/>
-    <LifeStyle/>
-    <Gallery/>
-    <BusinessNews/>
-    <DontMiss/>
-    <Footer/>
-    <Divider/>
-    <ScrollToTop/>
-    {/* <Section/> */}
+      {/* <Envato/> */}
+      <NavBar />
+      <HeaderSlider />
+      <Banner />
+      <EditorCard />
+      <BlogSection />
+      <LifeStyle />
+      <Gallery />
+      <BusinessNews />
+      <DontMiss />
+      <Footer />
+      <Divider />
+      <ScrollToTop />
+      {/* <Section/> */}
     </>
   )
 }

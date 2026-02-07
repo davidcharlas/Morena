@@ -4,7 +4,7 @@ import SectionTitle from './SectionTitle'
 
 export default function BusinessNews() {
   return (
-    <div className='business-news-container'>
+    <div className='business-news-container container'>
       <div className="business-news">
         <div style={{ marginBottom: "20px" }}><SectionTitle title={"Business News"} /></div>
         <div className="life-style-container" style={{ margin: "0", height: "auto" }}>

@@ -45,7 +45,7 @@ export default function RecentPosts() {
     return (
         <div>
             <div style={{ marginBottom: "30px" }}>
-                <div style={{marginLeft:"50px",marginTop: "50px"}}><SectionTitle title={"Recent Posts"} /></div>
+                <div style={{marginTop: "50px"}}><SectionTitle title={"Recent Posts"} /></div>
             </div>
             <div className="recent-post">
                 {recentPostsArr.map((item, index) => (
