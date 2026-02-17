@@ -25,6 +25,7 @@
   /* padding-left: 1px;
   padding-top: 38px; */
   line-height: 1.2 !important;
+  position: relative;
 }
 .leftside h3{
   width: 80%;
@@ -73,4 +74,15 @@
 
 .hover-border-bottom:hover {
   background-size: 100% 2px;
+}
+
+@media (max-width: 576px){
+  .hzz{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .editor-section{
+    background-color: #fff !important;
+  }
 }

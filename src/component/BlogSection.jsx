@@ -13,22 +13,29 @@ export default function BlogSection() {
     ]
     return (
         <section className="editor-section container-fluid">
-            <div className="container row flex-lg-column p-0 gx-4">
+            <div className="container row p-0 gx-4 eleven">
                 <div className="editors-left-card col-6">
                     <article>
-                        <div className="leftside row">
-                            <div className="col col-sm-12 d-flex flex-lg-row p-0 justify-content-between flex-md-column flex-sm-column">
-                                <div className="col left-card-meta d-flex flex-column align-items-center mt-5">
+                        <div className="hzz row g-0 overflow-hidden rounded flex-sm-column flex-lg-row">
+
+                            {/* Text - drives the height */}
+                            <div className="col-6 d-flex flex-column justify-content-center p-2">
                                 <div className="menu-card-meta"><span>spain</span> August 11, 2024</div>
                                 <h3 className="hover-border-bottom">Most Beautiful Things You Can But on Black Friday</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendu…</p>
                             </div>
-                            <div className="left-card-img col col-sm-12 grow">
-                                <img className="" src="/imgs/editor-1.jpg" alt="img" />
-                            </div>
-                            </div>
-                        </div>
 
+                            {/* Image - stretches to match text height */}
+                            <div className="col-6 p-0">
+                                <img
+                                    className="w-100 h-100"
+                                    src="/imgs/editor-1.jpg"
+                                    alt="img"
+                                    style={{ objectFit: 'cover', width: '286px', height: '310px'}}
+                                />
+                            </div>
+
+                        </div>
                     </article>
                 </div>
                 <div className="editor-right-blog col-lg-6">

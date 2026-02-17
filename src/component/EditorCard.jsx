@@ -26,7 +26,7 @@ export default function EditorCard() {
                     <div className="editor-card">
                         {cardArray.map((card, index) => (
                             <article
-                                className="editor-card-item"
+                                className="editor-card-item d-flex flex-column flex-lg-row"
                                 key={index}
                                 style={{ backgroundColor: card.bgc }}
                             >

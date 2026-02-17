@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div className='footer container d-flex flex-column flex-md-row justify-content-around'>
+        <div className='footer container d-flex flex-column flex-md-row justify-content-around align-items-center'>
             <div className="social-icons">
                 <a className='svgs' href="">
                     <svg className='svg-icon' fill="#000000" width="22px" height="22px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
