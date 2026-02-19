@@ -40,9 +40,11 @@ export default function LifeStyle() {
             <div>
                 <div><SectionTitle title={"Lifestyle"} /></div>
                 <div style={{ display: 'flex' }}>
-                    <div className="life-style-container d-flex flex-xl-row flex-sm-column">
-                        <div>
-                            <img src="/imgs/life-style-1.jpg" alt="" />
+                    <div className=" d-flex flex-column flex-xl-row flex-sm-column">
+                        <div className='life-style-container'>
+                            <div className="overlay">
+                                <img src="/imgs/life-style-1.jpg" alt="" style={{objectFit: 'cover'}} />
+                            </div>
                             <div className="life-style-1-content">
                                 <div style={{ color: "white" }} className="menu-card-meta"><span>Lifestyle</span> August 11, 2024</div>
                                 <h3 className="hover-border-bottom">Study Finds Link Between Social Media Use and Decling Mental Health in Teens</h3>

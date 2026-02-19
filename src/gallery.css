@@ -13,6 +13,7 @@
 }
 
 .gallery-overlay {
+    height: 42%;
     position: absolute;
     bottom: 0;
     padding: 60px 25px 25px;
@@ -38,7 +39,7 @@
 
 .gallery-overlay h3 {
     color: white;
-    font-size: 38px;
+    font-size: 4vw;
     width: 90%;
     line-height: 1.2 !important;
     margin-top: 26px;
@@ -47,6 +48,7 @@
 .gallery-thumbnail img {
     border-radius: 4px;
     width: 100%;
+    height: 100%;
 }
 .gallery-gradient{
     width: 406px;
@@ -56,7 +58,7 @@
 }
 .sl-cont{
     box-sizing: border-box;
-    width: 380px;
+    width: 390px;
     height: 570px;
     overflow: hidden;
     background-color: #03071e;

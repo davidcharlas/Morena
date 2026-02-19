@@ -670,15 +670,10 @@ ul.menu-dropdown {
   color: var(--secondaryColor);
 }
 
-.editor-right-blog {
-  display: flex;
-  justify-content: space-between;
-}
-
 .article-post {
   /* background-color: red; */
   max-width: 290px;
-  height: 331px;
+  height: 328px;
 }
 
 .article-post img {
@@ -698,15 +693,15 @@ section.lifestyle {
   margin-top: 60px;
   /* display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); */
-  gap: 20px;
+  gap: 30px;
   align-items: start;
 }
 
 .life-style-container {
   position: relative;
-  display: grid;
+  /* display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 20px;
+  gap: 20px; */
   margin-top: 30px;
 }
 
@@ -726,7 +721,7 @@ section.lifestyle {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 397px;
+  width: 100%;
   height: 50%;
   background: linear-gradient(to top, #000 0, #03071e 30%, rgba(0, 0, 0, 0) 100%);
   z-index: 1;
@@ -739,12 +734,12 @@ section.lifestyle {
   position: absolute;
   bottom: 26px;
   left: 22px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .life-style-1-content h3 {
   color: white;
-  width: 43%;
+  /* width: 43%; */
   padding-top: 12px;
   font-weight: 800;
   display: block;
@@ -859,8 +854,9 @@ section.lifestyle {
   padding-top: 20px;
   margin-bottom: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 
 /* .vertical-links {
@@ -878,7 +874,6 @@ section.lifestyle {
   margin-top: 30px;
 }
 
-
 .travel-title {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -886,8 +881,9 @@ section.lifestyle {
 
 .travel-news-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
 .category-tag {
@@ -955,6 +951,7 @@ section.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 
 .sponsored {
@@ -1115,12 +1112,13 @@ hr {
   flex: 0 0 auto !important;
 }
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
   /* .eleven{
     display: grid;
     grid-template-columns: 1fr 1fr;
   } */
 }
+
 /* Responsive for Tablets....*/
 @media (max-width: 768px) {
   .slider-container {
@@ -1141,4 +1139,27 @@ hr {
     width: 28px;
     height: 28px;
   }
+}
+
+@media (max-width: 576px) {
+  .life-style-container {
+    flex-direction: column;
+  }
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #000 0, #03071e 30%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 4px;
 }

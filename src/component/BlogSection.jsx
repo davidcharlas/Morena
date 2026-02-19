@@ -13,35 +13,48 @@ export default function BlogSection() {
     ]
     return (
         <section className="editor-section container-fluid">
-            <div className="container row p-0 gx-4 eleven">
-                <div className="editors-left-card col-6">
-                    <article>
-                        <div className="hzz row g-0 overflow-hidden rounded flex-sm-column flex-lg-row">
+            <div className="container p-0 gx-4 eleven">
+                <div className="row g-0">
 
-                            {/* Text - drives the height */}
-                            <div className="col-6 d-flex flex-column justify-content-center p-2">
-                                <div className="menu-card-meta"><span>spain</span> August 11, 2024</div>
-                                <h3 className="hover-border-bottom">Most Beautiful Things You Can But on Black Friday</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendu…</p>
+                    {/* LEFT FEATURED CARD */}
+                    <div className="editors-left-card col-12 col-lg-6 px-0">
+                        <article>
+                            <div className="hzz row g-0 overflow-hidden rounded flex-row">
+
+                                {/* TEXT - order-2 on mobile (below image), order-1 on desktop (left) */}
+                                <div className="col-6 d-flex flex-column justify-content-center p-3 order-2 order-lg-1">
+                                    <div className="menu-card-meta">
+                                        <span>spain</span> August 11, 2016
+                                    </div>
+                                    <h3 className="hover-border-bottom">Most Beautiful Things You Can Buy on Black Friday</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendu…</p>
+                                </div>
+
+                                {/* IMAGE - order-1 on mobile (above text), order-2 on desktop (right) */}
+                                <div className="col-12 col-sm-6 p-0 order-1 order-lg-2">
+                                    <img
+                                        className="w-100 h-100"
+                                        src="/imgs/editor-1.jpg"
+                                        alt="img"
+                                        style={{ objectFit: 'cover', minHeight: '260px' }}
+                                    />
+                                </div>
+
                             </div>
+                        </article>
+                    </div>
 
-                            {/* Image - stretches to match text height */}
-                            <div className="col-6 p-0">
-                                <img
-                                    className="w-100 h-100"
-                                    src="/imgs/editor-1.jpg"
-                                    alt="img"
-                                    style={{ objectFit: 'cover', width: '286px', height: '310px'}}
-                                />
-                            </div>
-
+                    {/* RIGHT ARTICLES - each gets col-6 so they sit side by side on desktop */}
+                    <div className="col-12 col-lg-6">
+                        <div className="row g-0">
+                            {articleArray.map((item, index) => (
+                                <div className="editor-right-blog col-12 col-sm-6" key={index}>
+                                    <Article img={item.img} title={item.title} />
+                                </div>
+                            ))}
                         </div>
-                    </article>
-                </div>
-                <div className="editor-right-blog col-lg-6">
-                    {articleArray.map((item, index) => (
-                        <Article key={index} img={item.img} title={item.title} />
-                    ))}
+                    </div>
+
                 </div>
             </div>
         </section>

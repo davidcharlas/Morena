@@ -1,15 +1,16 @@
 .recent-post {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* Two columns, not rows */
+  grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
   gap: 20px;
   /* margin-left: 50px; */
+  justify-items: center;
 }
 
 .recent-post-card {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 397px;
+  width: 346px;
 }
 
 .recent-post-card img {
