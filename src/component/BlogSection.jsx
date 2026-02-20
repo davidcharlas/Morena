@@ -12,17 +12,16 @@ export default function BlogSection() {
         }
     ]
     return (
-        <section className="editor-section container-fluid">
+        <section className="container-fluid editor-section">
             <div className="container p-0 gx-4 eleven">
-                <div className="row g-0">
+                <div className="row g-5">
 
                     {/* LEFT FEATURED CARD */}
                     <div className="editors-left-card col-12 col-lg-6 px-0">
                         <article>
-                            <div className="hzz row g-0 overflow-hidden rounded flex-row">
+                            <div className="hzz row g-0 overflow-hidden rounded flex-row justify-content-center">
 
-                                {/* TEXT - order-2 on mobile (below image), order-1 on desktop (left) */}
-                                <div className="col-6 d-flex flex-column justify-content-center p-3 order-2 order-lg-1">
+                                <div className="col-10 col-lg-6 d-flex flex-column justify-content-center p-3 order-2 order-lg-1">
                                     <div className="menu-card-meta">
                                         <span>spain</span> August 11, 2016
                                     </div>
@@ -30,10 +29,9 @@ export default function BlogSection() {
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendu…</p>
                                 </div>
 
-                                {/* IMAGE - order-1 on mobile (above text), order-2 on desktop (right) */}
-                                <div className="col-12 col-sm-6 p-0 order-1 order-lg-2">
+                                <div className="col-12 col-sm-6 p-0 order-1 order-lg-2 d-flex justify-content-center">
                                     <img
-                                        className="w-100 h-100"
+                                        className="w-100 h-100 rounded-end-4 imgss"
                                         src="/imgs/editor-1.jpg"
                                         alt="img"
                                         style={{ objectFit: 'cover', minHeight: '260px' }}
@@ -44,7 +42,7 @@ export default function BlogSection() {
                         </article>
                     </div>
 
-                    {/* RIGHT ARTICLES - each gets col-6 so they sit side by side on desktop */}
+                    {/* RIGHT ARTICLES */}
                     <div className="col-12 col-lg-6">
                         <div className="row g-0">
                             {articleArray.map((item, index) => (

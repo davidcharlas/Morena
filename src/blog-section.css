@@ -52,6 +52,9 @@
   gap: 20px;
   justify-content: center;
 }
+.imgss{
+  border-radius: 0 4px 4px 0;
+}
 
 .left-card-img img{
   object-fit: cover;
@@ -77,9 +80,15 @@
     display: flex;
     flex-direction: column;
   }
+  .imgss{
+    border-radius: 4px;
+  }
   
   .editor-section{
     background-color: #fff !important;
     border-radius: 0;
+  }
+  .editors-left-card{
+    background-color: #f1f4f9;
   }
 }
