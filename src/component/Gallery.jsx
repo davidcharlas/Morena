@@ -41,8 +41,8 @@ export default function Gallery() {
                     <div className="gallery-thumbnail">
                         <img src="/imgs/gallery-1.jpg" alt="Gallery Image 1" />
                         <div className="gallery-overlay">
-                            <div style={{ display: "block" }} className="menu-card-meta"><span>business</span> August 11, 2024</div>
-                            <h3>Go For Western Economy With These Pioneering</h3>
+                            <div style={{ display: "block", color: 'white' }} className="menu-card-meta"><span>business</span> August 11, 2024</div>
+                            <h3>Go Western Economy With These Pioneering</h3>
                         </div>
                     </div>
                     <div className="gallery-gradient">

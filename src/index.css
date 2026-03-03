@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans";
   --primaryColor: #521D91;
   --secondaryColor: #6D61FD;
   --box-shadow: 0 4px 30px rgba(0, 0, 0, .07);
@@ -16,11 +16,15 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
+h3{
+  font-family: "DM Sans", sans-serif !important;
+}
 h4 {
   letter-spacing: -0.9px !important;
   line-height: 1.2 !important;
+  font-family: "DM Sans", sans-serif !important;
 }
 
 h3:hover {
@@ -55,9 +59,10 @@ a {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
-.preview__header {
+/* .preview__header {
   width: 100%;
   position: sticky;
   top: 0;
@@ -114,24 +119,14 @@ li {
   background-color: #82b440;
   box-shadow: 0 2px 0 #6f9a37;
   position: relative;
-}
+} */
 
 /* Full width background */
 .navbar-bg {
-  background-image: linear-gradient(to right, var(--primaryColor), var(--secondaryColor));
+  background: radial-gradient(circle at top right, var(--secondaryColor) 0, var(--primaryColor) 100%);
   width: 100%;
   /* height: 66px; */
 }
-
-/* Flex layout inside the container */
-.navbar {
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
-  height: 100%;
-  position: relative;
-}
-
 
 .logo {
   margin-left: 35px;
@@ -140,7 +135,7 @@ li {
 
 .logo img {
   width: 125px;
-  padding: 16px;
+  /* padding: 16px; */
   cursor: pointer;
 }
 
@@ -296,7 +291,7 @@ ul.menu-dropdown {
   column-gap: 16px;
   font-weight: normal;
   font-size: 13px;
-  padding: 16px 0 0;
+  /* padding: 16px 0 0; */
 }
 
 .menu-card-meta>span {
@@ -348,12 +343,18 @@ ul.menu-dropdown {
   margin-left: auto;
 }
 
+.small-screen-menu {
+  max-width: 100%;
+  flex: 1;
+  transition: all .3s ease-in-out;
+}
+
 .search-bar {
   /* background-color: red; */
   width: 300px;
   position: absolute;
-  top: 66px;
-  right: 0;
+  top: 68px;
+  right: 136px;
   padding: 15px 20px;
   box-sizing: border-box;
   box-shadow: var(--box-shadow);
@@ -389,11 +390,13 @@ ul.menu-dropdown {
   background-color: var(--pink-color);
   border: none;
   border-radius: 0px 4px 4px 0px;
+  transition: all .3s ease-in-out;
   /* color: var(--pink-color); */
 }
 
 .search-bar>button:hover {
   background-color: #000;
+  color: white;
 }
 
 .hover-border-bottom {
@@ -424,7 +427,7 @@ ul.menu-dropdown {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 28px 50px;
+  padding: 30px 0px;
   background: white;
   max-width: 100%;
   overflow: hidden;
@@ -534,7 +537,7 @@ ul.menu-dropdown {
   background: url("/src/assets/banner-img.jpg") center center / cover no-repeat;
   position: relative;
   width: 100%;
-  /* height: 506px; */
+  height: 506px;
   padding: 0 52px;
   /* overflow: hidden; */
   padding-bottom: 52px;
@@ -552,8 +555,8 @@ ul.menu-dropdown {
 .banner-post {
   position: relative;
   max-width: 58.333333%;
-  margin-right: auto;
-  padding-top: 138px;
+  /* margin-right: auto; */
+  padding-top: 110px;
   z-index: 1;
 }
 
@@ -582,7 +585,7 @@ ul.menu-dropdown {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   /* grid-auto-columns: minmax(1fr, auto); */
-  gap: 20px;
+  gap: 14px;
   /* overflow: hidden !important; */
   position: relative;
   z-index: 1;
@@ -616,6 +619,7 @@ ul.menu-dropdown {
 /* Editor Card Styling*/
 .editor {
   margin-top: 52px;
+  padding: 14px;
 }
 
 .editor-heading {
@@ -664,6 +668,7 @@ ul.menu-dropdown {
   line-height: 1.2 !important;
   /* width: 95%; */
   font-weight: bold;
+  /* font-size: 22px; */
 }
 
 .card-details h3:hover {
@@ -672,7 +677,7 @@ ul.menu-dropdown {
 
 .article-post {
   /* background-color: red; */
-  max-width: 290px;
+  max-width: 240px;
   height: 328px;
 }
 
@@ -693,7 +698,7 @@ section.lifestyle {
   margin-top: 60px;
   /* display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); */
-  gap: 30px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -706,8 +711,8 @@ section.lifestyle {
 }
 
 .life-style-container img {
-  /* width: 397px; */
-  height: 420px;
+  width: 100%;
+  /* height: 420px; */
   object-fit: cover;
   border-radius: 4px;
   box-sizing: border-box;
@@ -749,7 +754,7 @@ section.lifestyle {
   margin-left: 30px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
 
 .horizontal-post {
@@ -799,8 +804,8 @@ section.lifestyle {
 } */
 
 .horizontal-post-image img {
-  /* width: 411px; */
-  height: 288px;
+  width: 100%;
+  /* height: 288px; */
   object-fit: cover;
   border-radius: 4px 0 0 4px;
 }
@@ -882,7 +887,7 @@ section.lifestyle {
 .travel-news-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
-  gap: 20px;
+  gap: 10px;
   justify-items: center;
 }
 
@@ -890,7 +895,7 @@ section.lifestyle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f3f4f6;
+  background-color: #f1f4f9;
   padding: 12px 16px;
   border-radius: 6px;
   margin-bottom: 12px;
@@ -905,11 +910,12 @@ section.lifestyle {
 .category-count {
   background-color: #e5e7eb;
   color: #ef4444;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 4px;
-  width: 14px;
+  width: 30px;
+  height: 30px;
   text-align: center;
 }
 
@@ -1112,41 +1118,6 @@ hr {
   flex: 0 0 auto !important;
 }
 
-@media (max-width: 1199px) {
-  /* .eleven{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
-}
-
-/* Responsive for Tablets....*/
-@media (max-width: 768px) {
-  .slider-container {
-    padding: 10px 15px;
-    gap: 15px;
-  }
-
-  .breaking-news-badge {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-
-  .news-item {
-    font-size: 14px;
-  }
-
-  .nav-button {
-    width: 28px;
-    height: 28px;
-  }
-}
-
-@media (max-width: 576px) {
-  .life-style-container {
-    flex-direction: column;
-  }
-}
-
 .overlay {
   position: relative;
 }
@@ -1162,4 +1133,285 @@ hr {
   z-index: 1;
   pointer-events: none;
   border-radius: 4px;
+}
+.gapp{
+  gap: 30px !important;
+}
+.fs-20{
+  font-size: 20px !important;
+}
+.c-gray{
+  color: #888 !important;
+}
+.dont-miss{
+  background: radial-gradient(circle at top right, var(--primaryColor) 0, var(--secondaryColor) 100%);
+}
+@media (max-width: 390px) {
+  .horizontal-post {
+    max-width: 360px;
+  }
+
+  .life-style-container::before {
+    content: none;
+  }
+
+  .article-list {
+    width: 330px;
+  }
+
+  .article-post {
+    max-width: 330px;
+  }
+
+  .article-post img {
+    width: 330px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    width: 100% !important;
+  }
+
+  .life-style-container {
+    flex-direction: column;
+  }
+
+  .slider-controls {
+    display: none;
+  }
+
+  .breaking-news-badge span {
+    display: none;
+  }
+
+  .banner-discription {
+    display: none;
+  }
+
+  .banner-card {
+    display: none;
+  }
+
+  .slider-container {
+    padding: 30px 0px;
+  }
+
+  .banner-post {
+    max-width: 100%;
+    padding: 64px 0px;
+  }
+
+  .banner-post>.banner-title a {
+    font-size: 22px;
+    letter-spacing: -1.7px;
+  }
+
+  .banner-post>.banner-title {
+    width: 100%;
+  }
+
+  .nav-links {
+    margin: 0;
+  }
+
+  .editor-card-item {
+    max-width: 360px;
+  }
+
+  .search-bar {
+    top: 0;
+    left: 0;
+  }
+
+  .search-bar input {
+    width: 330px;
+  }
+
+  .nav-li {
+    padding: 8px 0px;
+  }
+
+  .life-style-container {
+    width: 360px;
+  }
+
+  .life-style-container img {
+    width: 360px;
+  }
+
+  .overlay {
+    width: 360px;
+  }
+
+  .horizonta-posts {
+    margin: 0;
+  }
+
+  /* .horizontal-post {} */
+
+  .horizontal-post-card {
+    max-width: 360px;
+  }
+
+  .editor-card-item img {
+    width: 320px;
+    height: 224px;
+  }
+}
+
+/* Responsive forr Tablets....*/
+@media (max-width: 768px) {
+  .article-list{
+  grid-template-columns: repeat(2, 1fr);
+  }
+  .article-list .article-post{
+    width: 100%;
+  }
+  .article-list .article-post img{
+    width: 100%;
+    height: 206px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .sponsored{
+    margin-top: 30px;
+  }
+  .business-news-container .life-style-container::before{
+    max-width: 100%;
+  }
+  .business-news-container .life-style-container img{
+    max-width: 100%;
+  }
+  .business-news-container .life-style-1-content{
+    /* width: 100%; */
+  }
+  .training-section-posts{
+    display: grid;
+    gap: 12px;
+  }
+  .training-card .life-style-container::before{
+    max-width: 100%;
+  }
+  .training-card .life-style-container img{
+    max-width: 100%;
+  }
+  .daily-news-container{
+    display: grid;
+    gap: 20px;
+  }
+  .article-post{
+    max-width: 100%;
+    height: auto;
+    /* display: grid; */
+    gap: 12px;
+  }
+  .article-post img{
+    width: 100%;
+    height: 357px;
+    border-radius: 4px 4px 0 0;
+  }
+  .article-post .menu-card-meta{
+    margin-top: 20px;
+  }
+  .sports-articles{
+    grid-template-columns: 1fr;
+  }
+  .article-post{width: 100%;}
+  .horizontal-post-content{
+    gap: 12px;
+  }
+  .horizontal-post-image img{
+    width: 100%;
+    height: 357px;
+    border-radius: 4px 4px 0 0;
+  }
+  .travel-news-container{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .travel-news-container .article-post{
+    max-width: 100%;
+    height: 100%;
+  }
+  .article-post img{
+    width: 100%;
+    height: 357px;
+  }
+  .horizonta-posts{
+    margin-left: 0;
+  }
+  .overlay{
+    height: 357px;
+    width: 100%;
+  }
+  .life-style-container img {
+    width: 100%;
+    height: 357px;
+  }
+  .life-style-1-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .life-style-1-content h3{
+    font-size: 20px;
+    padding: 0;
+  }
+  .life-style-container{
+    margin-bottom: 20px;
+  }
+  .editor-card-item{
+    align-items: flex-start;
+    gap: 0;
+  }
+  .editor-card-item img {
+    width: 100%;
+    height: 329px;
+  }
+  .card-details h3{
+    font-size: 20px;
+  }
+  .slider-container {
+    /* padding: 10px 15px; */
+    gap: 15px;
+  }
+  .breaking-news-badge {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .news-item {
+    font-size: 14px;
+  }
+
+  .nav-button {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-bg {
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .card-item {
+    max-width: 430px;
+  }
+
+  .editor-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay::after {
+    max-width: 100%;
+  }
+
+  .life-style-container::before {
+    max-width: 60%;
+  }
 }

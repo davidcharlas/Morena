@@ -10,23 +10,23 @@ export default function FollowUs() {
         },
         {
             svg: "facebook",
-            followers: "73.6"
+            followers: "36.1"
         },
         {
             svg: "instagram",
-            followers: "73.6"
+            followers: "156"
         },
         {
             svg: "linkedin",
-            followers: "73.6"
+            followers: "13.9"
         },
         {
             svg: "twitter",
-            followers: "73.6"
+            followers: "31.4"
         },
         {
             svg: "youtube",
-            followers: "73.6"
+            followers: "32"
         },
     ]
     return (

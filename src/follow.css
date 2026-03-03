@@ -2,7 +2,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     border: 0.1px solid lightgray;
     border-radius: 4px;
     width: 182px;
@@ -20,6 +20,7 @@
 .follow-us-card-icon > img{
     width: 36px;
     height: 36px;
+    margin-right: 7px;
 }
 .follow-us-cards{
     margin-top: 30px;
@@ -40,4 +41,14 @@
 
 .hover-border-bottom:hover {
   background-size: 100% 2px;
+}
+@media (max-width:390px){
+    .follow-us-cards{
+        gap: 5px;
+    }
+}
+@media (max-width: 768px){
+    .follow-us-card{
+        width: 247.5px;
+    }
 }

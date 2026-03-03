@@ -1,4 +1,3 @@
-import React from 'react'
 import SectionTitle from './SectionTitle'
 import "../sports.css"
 import Article from './Article'
@@ -21,8 +20,8 @@ export default function SportsNews() {
     return (
         <div>
             <div style={{ margin: "20px 0px" }}><SectionTitle title={"Sports News"} /></div>
-            <div className="horizontal-post-card d-flex flex-column flex-lg-row">
-                <div className="horizontal-post-image">
+            <div className="horizontal-post-card d-flex flex-column flex-md-row">
+                <div className="horizontal-post-image col-12 col-md-6">
                     <img src="/imgs/sports-1.jpg" alt="Swimming" />
                 </div>
                 <div className="horizontal-post-content" style={{ padding: "20px" }}>

@@ -9,6 +9,8 @@ export default function Banner() {
             img: "/imgs/banner-2.jpg",
             title: "People Break Down Covid 19 Home Quarantine Rule.",
         },
+    ];
+    const banners1 = [
         {
             img: "/imgs/banner-3.jpg",
             title: "Duis tempor purus rutrum, tincidunt lacus.",
@@ -17,25 +19,35 @@ export default function Banner() {
             img: "/imgs/banner-4.jpg",
             title: "Winter Fashion Trends: They only looks you need",
         },
-    ];
+    ]
     return (
         <div className="container-fluid banner">
             <div className="container">
-                <div className="banner-post">
-                    <div className="banner-meta">
-                        <div style={{ color: "white" }} className="menu-card-meta"><span>business</span> August 11, 2024</div>
-                    </div>
-                    <div className="banner-title">
-                        <h3><a className="hover-border-bottom" href="#">New Study Reveals Surprising Benefits of <br /> Meditation on Brain Health</a></h3>
-                    </div>
-                    <div className="banner-discription">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendum pretium. Suspendisse ligula neque, ultri...</p>
+                <div className="row h-100">
+                    <div className="banner-post col-xl-7 col-lg-9">
+                        <div className="d-grid align-items-center" style={{rowGap: '16px'}}>
+                            <div className="banner-meta p-0">
+                                <div style={{ color: "white" }} className="menu-card-meta p-0"><span>business</span> August 11, 2024</div>
+                            </div>
+                            <div className="banner-title p-0">
+                                <h3><a className="hover-border-bottom" href="#">New Study Reveals Surprising Benefits of Meditation on Brain Health</a></h3>
+                            </div>
+                            <div className="banner-discription p-0">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendum pretium. Suspendisse ligula neque, ultri...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="banner-card">
+                <div className="banner-card d-none d-md-flex">
                     {banners.map((banner, index) => (
                         <div key={index} className="card-item">
+                            <img src={banner.img} alt="banner-img" />
+                            <h3 className="hover-border-bottom">{banner.title}</h3>
+                        </div>
+                    ))}
+                    {banners1.map((banner, index) => (
+                        <div key={index} className="card-item d-none d-xl-flex">
                             <img src={banner.img} alt="banner-img" />
                             <h3 className="hover-border-bottom">{banner.title}</h3>
                         </div>

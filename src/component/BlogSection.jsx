@@ -14,24 +14,28 @@ export default function BlogSection() {
     return (
         <section className="container-fluid editor-section">
             <div className="container p-0 gx-4 eleven">
-                <div className="row g-5">
+                <div className="row g-2 g-lg-5 g-md-5">
 
                     {/* LEFT FEATURED CARD */}
-                    <div className="editors-left-card col-12 col-lg-6 px-0">
+                    <div className="editors-left-card col-12 col-xl-6 px-0">
                         <article>
                             <div className="hzz row g-0 overflow-hidden rounded flex-row justify-content-center">
 
-                                <div className="col-10 col-lg-6 d-flex flex-column justify-content-center p-3 order-2 order-lg-1">
+                                <div className="col-12 col-lg-12 col-xl-6 d-flex flex-column justify-content-center order-2 order-lg-1" style={
+                                    {
+                                        gap: "12px",
+                                        padding: "35px",
+                                    }}>
                                     <div className="menu-card-meta">
                                         <span>spain</span> August 11, 2016
                                     </div>
-                                    <h3 className="hover-border-bottom">Most Beautiful Things You Can Buy on Black Friday</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendu…</p>
+                                    <h3 className="hover-border-bottom fs-20">Most Beautiful Things You Can Buy on Black Friday</h3>
+                                    <p className="c-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendu…</p>
                                 </div>
 
-                                <div className="col-12 col-sm-6 p-0 order-1 order-lg-2 d-flex justify-content-center">
+                                <div className="col-12 col-lg-6 p-0 order-1 order-lg-2 d-flex justify-content-end">
                                     <img
-                                        className="w-100 h-100 rounded-end-4 imgss"
+                                        className="w-100 h-100 imgss"
                                         src="/imgs/editor-1.jpg"
                                         alt="img"
                                         style={{ objectFit: 'cover', minHeight: '260px' }}
@@ -43,11 +47,11 @@ export default function BlogSection() {
                     </div>
 
                     {/* RIGHT ARTICLES */}
-                    <div className="col-12 col-lg-6">
+                    <div className="col-12 col-xl-6">
                         <div className="row g-0">
                             {articleArray.map((item, index) => (
                                 <div className="editor-right-blog col-12 col-sm-6" key={index}>
-                                    <Article img={item.img} title={item.title} />
+                                    <Article img={item.img} title={item.title} bgc={"#fff"} />
                                 </div>
                             ))}
                         </div>

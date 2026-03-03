@@ -47,15 +47,15 @@ export default function HeaderSlider() {
   }, [])
 
   return (
-    <div className="container">
+    <div className="container px-3">
       <div
-        className="slider-container"
+        className="slider-container px-0"
         onMouseEnter={stopAutoPlay}
         onMouseLeave={startAutoPlay}
       >
         <div className="breaking-news-badge">
           <img src="/rss.png" alt="" width="24px" />
-          <span>Breaking News</span>
+          <span className='d-none d-md-flex'>Breaking News</span>
         </div>
 
         <div className="slider-content">
@@ -71,7 +71,7 @@ export default function HeaderSlider() {
           </div>
         </div>
 
-        <div className="slider-controls">
+        <div className="slider-controls d-none d-lg-flex">
           <button className="nav-button" onClick={prevNews}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <path

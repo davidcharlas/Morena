@@ -1,4 +1,3 @@
-import React from 'react'
 import Article from './Article'
 import SectionTitle from './SectionTitle'
 // import '../article.css'
@@ -23,12 +22,12 @@ export default function DontMiss() {
     ]
     return (
         <>
-            <section className="editor-section container-fluid" style={{ flexDirection: 'column', background: "linear-gradient(to right, var(--primaryColor), var(--secondaryColor))" }}>
+            <section className="editor-section container-fluid dont-miss">
                 <div className="container">
                     <div style={{ marginBottom: "20px", color: 'white' }}><SectionTitle title="Don't Miss" /></div>
                     <div className='article-list' style={{ color: "white" }}>
                         {articles.map((article, index) => (
-                            <Article key={index} img={article.img} title={article.title} />
+                            <Article key={index} img={article.img} title={article.title} tColor={"white"}/>
                         ))}
                     </div>
                 </div>

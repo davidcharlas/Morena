@@ -1,6 +1,7 @@
-import React from 'react'
 import "../button.css"
-export default function Button({text, textColor, bgColor}) {
+import { FaArrowRightLong } from "react-icons/fa6";
+
+export default function Button({ text, textColor, bgColor }) {
     return (
         <button
             className="more-posts-btn"
@@ -10,7 +11,9 @@ export default function Button({text, textColor, bgColor}) {
             }}
         >
             {text}
-            <span className="arrow">→</span>
+            {/* <span className="arrow">→</span> */}
+            <FaArrowRightLong fontWeight={"bold"}/>
+            {/* <i class="fa-solid fa-arrow-right-long"></i> */}
         </button>
     )
 }

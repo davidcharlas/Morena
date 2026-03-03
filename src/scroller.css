@@ -30,3 +30,8 @@
 .scroll-to-top:active {
   transform: translateY(-1px);
 }
+@media (max-width: 390px){
+  .scroll-to-top{
+    right: 60px;
+  }
+}

@@ -1,4 +1,3 @@
-import React from 'react'
 import SectionTitle from './SectionTitle'
 import PostHorizontal from './PostHorizontal'
 import FollowUs from './FollowUs'
@@ -35,59 +34,67 @@ export default function LifeStyle() {
         },
     ]
     return (
-        <section className="container lifestyle d-flex flex-column flex-xl-row gap-4">
-
-            <div>
-                <div><SectionTitle title={"Lifestyle"} /></div>
-                <div style={{ display: 'flex' }}>
-                    <div className=" d-flex flex-column flex-xl-row flex-sm-column">
-                        <div className='life-style-container'>
-                            <div className="overlay">
-                                <img src="/imgs/life-style-1.jpg" alt="" style={{objectFit: 'cover'}} />
-                            </div>
-                            <div className="life-style-1-content">
-                                <div style={{ color: "white" }} className="menu-card-meta"><span>Lifestyle</span> August 11, 2024</div>
-                                <h3 className="hover-border-bottom">Study Finds Link Between Social Media Use and Decling Mental Health in Teens</h3>
+        <section className="container lifestyle d-grid gap-4 p-2 p-sm-0">
+            <div className="row">
+                <div className=' col-8'>
+                    <div><SectionTitle title={"Lifestyle"} /></div>
+                    <div style={{ display: 'flex' }}>
+                        <div className=" d-flex flex-column flex-md-row flex-sm-column">
+                            <div className="row">
+                                <div className="col">
+                                    <div className='life-style-container'>
+                                        <div className="overlay">
+                                            <img src="/imgs/life-style-1.jpg" alt="" style={{ objectFit: 'cover' }} />
+                                        </div>
+                                        <div className="life-style-1-content">
+                                            <div style={{ color: "white" }} className="menu-card-meta"><span>Lifestyle</span> August 11, 2024</div>
+                                            <h3 className="hover-border-bottom">Study Finds Link Between Social Media Use and Decling Mental Health in Teens</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="horizonta-posts col">
+                                        {horzontalArr.map((item, index) => (
+                                            <PostHorizontal
+                                                key={index}
+                                                title={item.title}
+                                                posted={item.posted}
+                                                img={item.img}
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="horizonta-posts">
-                            {horzontalArr.map((item, index) => (
-                                <PostHorizontal
-                                    key={index}
-                                    title={item.title}
-                                    posted={item.posted}
-                                    img={item.img}
-                                />
-                            ))}
+                    </div>
+                    <div className="travel-news">
+                        <TravelNews />
+                    </div>
+                    <div>
+                        <RecentPosts />
+                    </div>
+                    <div className="read-more-btn">
+                        <Button text={"MORE POSTS"} textColor={"#e34e36"} bgColor={"#ffe1df"} />
+                    </div>
+                    <div className="sport-news">
+                        <SportsNews />
+                    </div>
+                </div>
+                <div className=' col-4'>
+                    <div className='vertical-links'>
+                        <FollowUs />
+                        <DailyNews />
+                        <TopCategory />
+                        <Training />
+                        <div className="ads" style={{ marginTop: "50px" }}>
+                            <div className="sponsored">
+                                <span>ADVERTISEMENT</span>
+                                <img width="300" height="600" src="/imgs/ads-1.jpg" alt="ADVT" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="travel-news">
-                    <TravelNews />
-                </div>
-                <div>
-                    <RecentPosts />
-                </div>
-                <div className="read-more-btn">
-                    <Button text={"Read More"} textColor={"#e34e36"} bgColor={"#ffe1df"} />
-                </div>
-                <div className="sport-news">
-                    <SportsNews />
-                </div>
             </div>
-            <div className='vertical-links'>
-                <FollowUs />
-                <DailyNews />
-                <TopCategory />
-                <Training />
-                <div className="ads" style={{ marginTop: "50px" }}>
-                    <div className="sponsored">
-                        <span>ADVERTISEMENT</span>
-                        <img width="300" height="600" src="/imgs/ads-1.jpg" alt="ADVT" />
-                    </div>
-                </div>
-            </div>
-
         </section>
     )
 }

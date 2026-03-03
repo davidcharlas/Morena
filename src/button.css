@@ -37,3 +37,11 @@
 .hover-border-bottom:hover {
   background-size: 100% 2px;
 }
+@media (max-width: 768px){
+  .more-posts-btn{
+    font-size: 13px;
+    font-weight: 1000;
+    letter-spacing: 0.16px;
+    font-family: "DM Sans", sans-serif;
+  }
+}

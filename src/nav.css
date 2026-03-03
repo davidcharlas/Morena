@@ -1,0 +1,149 @@
+/* =========================
+   NAVBAR BACKGROUND
+========================= */
+.navbar-bg {
+  background: linear-gradient(90deg, #5f2c82, #49a09d);
+  padding: 18px 0;
+  position: relative;
+}
+
+/* =========================
+   LOGO
+========================= */
+#logo-img {
+  height: 34px;
+}
+
+/* =========================
+   NAV LINKS (Desktop)
+========================= */
+.nav-links {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-a {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  transition: 0.3s ease;
+}
+
+.nav-a:hover {
+  opacity: 0.8;
+}
+
+.nav-li {
+  position: relative;
+}
+
+/* =========================
+   SEARCH CIRCLE (Desktop)
+========================= */
+.search-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-circle:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* =========================
+   DESKTOP SEARCH BAR
+========================= */
+.navbar-bg .form-control {
+  border-radius: 4px;
+  border: none;
+  padding: 8px 12px;
+}
+
+.navbar-bg .btn {
+  border-radius: 4px;
+}
+
+/* =========================
+   MOBILE MENU (Fullscreen)
+========================= */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #5f2c82, #49a09d);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  color: white;
+}
+
+/* Header inside mobile */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-header img {
+  height: 34px;
+}
+
+/* =========================
+   MOBILE LINKS
+========================= */
+.mobile-links {
+  margin-top: 40px;
+  flex: 1;
+}
+
+.mobile-links li {
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.mobile-links li:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   MOBILE SEARCH BAR
+========================= */
+.mobile-search {
+  display: flex;
+  margin-top: auto;
+}
+
+.mobile-search input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.mobile-search button {
+  background: #ff6b7a;
+  border: none;
+  padding: 0 18px;
+  border-radius: 0 4px 4px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   REMOVE MOBILE SCROLL WHEN OPEN
+========================= */
+body.menu-open {
+  overflow: hidden;
+}
